@@ -9,7 +9,7 @@ Parte estrutural responsável por processar as requisições CRUD, estabelecendo
 ## Endpoints da API
 
 ### 1. Listar todas as transações
-<details><summary>**Endpoint:** `GET /transacao` (http://localhost:8080/transacao): Retorna todas as transações cadastradas.</summary>
+<details><summary>**Endpoint:** `GET /transacao` </summary>(http://localhost:8080/transacao): Retorna todas as transações cadastradas.</details>
 
 ### 2. Somar transações por categoria
 - **Endpoint:** `GET /transacao/somartransacoes?id={id}`(http://localhost:8080/transacao/somartransacoes?id=1): Retorna a soma dos valores de transações para uma categoria específica.
