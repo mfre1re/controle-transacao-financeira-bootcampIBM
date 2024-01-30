@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public interface TransacaoRepository extends JpaRepository<TransacaoEntity, Integer> {
-    //List<TransacaoEntity> findByCategoriaNome(String categoria);
     List<TransacaoEntity> findByCategoriaId(Integer categoriaId);
 
 }
