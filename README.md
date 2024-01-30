@@ -24,20 +24,28 @@ Parte estrutural responsável por processar as requisições CRUD, estabelecendo
 </details>
 
 ### 4. Atualizar transação
-- **Endpoint:** `POST /transacao/atualizar`(http://localhost:8080/transacao/atualizar): Atualiza uma transação existente com base no ID.
+<details><summary>Endpoint: POST  /transacao/atualizar </summary>(http://localhost:8080/transacao/atualizar): Atualiza uma transação existente com base no ID.
+  
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/c110efef-ca4a-4c92-b615-32490efd6ee6)
+</details>
 
 ### 5. Deletar transação por ID
-- **Endpoint:** `DELETE /transacao?id={id}`(http://localhost:8080/transacao?id=3): Deleta uma transação usando o ID fornecido.
+<details><summary>Endpoint: DELETE  /transacao?id={id}</summary>(http://localhost:8080/transacao?id=3): Deleta uma transação usando o ID fornecido.
+  
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/b42f3571-709b-48e6-82f2-07ffde23c170)
+</details>
 
 ### 6. Deletar todas as transações
-- **Endpoint:** `DELETE /transacao/apagartudo`(http://localhost:8080/transacao/apagartudo): Deleta todas as transações da base de dados.
+<details><summary>Endpoint: DELETE  /transacao/apagartudo</summary>(http://localhost:8080/transacao/apagartudo): Deleta todas as transações da base de dados.
+  
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/111a257e-b18b-45d5-a4ae-d4aa9fa2c08b)
+</details>
 
 ### 7. Listar todas as categorias
-- **Endpoint:** `GET /categoria`(http://localhost:8080/categoria): Retorna todas as categorias cadastradas.
+<details><summary>Endpoint: GET  /categoria</summary>(http://localhost:8080/categoria): Retorna todas as categorias cadastradas.
+  
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/da4d9f60-281e-47fc-ba02-3710ce483481)
+</details>
 
 
 ## Estruturação
