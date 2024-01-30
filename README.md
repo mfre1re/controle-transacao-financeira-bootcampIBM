@@ -2,6 +2,7 @@
 API de transações financeiras com simples implementação de frontend e backend
 
 # Transação Financeira (Backend)
+Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git clone 
 
 ## Descrição
 Parte estrutural responsável por processar as requisições CRUD, estabelecendo a interface entre os clientes e a base de dados por meio dos endpoints da API. Aqui temos os devidos endpoints com suas funcionalidades tais como requisitar (GET) as transações ou categorias, inserir ou atualizar transações (POST), deletar transações, todas ou única (DELETE). 
