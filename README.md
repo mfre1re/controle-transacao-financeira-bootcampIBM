@@ -36,10 +36,8 @@ Parte estrutural responsável por processar as requisições CRUD, estabelecendo
 - **Endpoint:** `GET /categoria`(http://localhost:8080/categoria): Retorna todas as categorias cadastradas.
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/da4d9f60-281e-47fc-ba02-3710ce483481)
 
-## Estrutura Geral do Backend
-Explicação breve sobre a estrutura de pacotes e módulos.
 
-## Instruções de Execução
+## Estruturação
 O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo estruturado assim os seguintes pacotes:
 - config: CORS - para permitir que o backend receba solicitações de diferentes origens.
 - controllers:
@@ -69,7 +67,7 @@ O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo e
      *2.CategoriaService* - gerencia a lógica de negócios associadada as categorias de transações. Assim como o `TransacaoService`, ele interage com o 
             `CategoriaRepository` para realizar operações no banco de dados.
 
-## Modelos de Dados
+## Entendendo os dados
 ### TransacaoEntity
 - **Atributos:**
   - `id` (Integer): Identificador único da transação.
