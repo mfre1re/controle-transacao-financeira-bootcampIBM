@@ -100,3 +100,19 @@ O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo e
 - **Atributos:**
   - `id` (Integer): Identificador único da categoria.
   - `categoria` (String): Nome da categoria.
+    
+# Transação Financeira (Frontend)
+
+O frontend é a parte do sistema que vai interagir com o usuário e é responsável pela apresentação, interface gráfica e interatividade. Nesta API utilizamos alguns recursos importantes listados abaixo:
+
+## Frameworks e Bibliotecas Utilizadas
+- [Angular](https://angular.io/): Framework para desenvolvimento de aplicativos web em TypeScript/JavaScript.
+- [RxJS](https://rxjs.dev/): Biblioteca para programação reativa usando Observables.
+- [Node.js](https://nodejs.org/): Ambiente de execução para JavaScript/TypeScript do lado do servidor.
+- [Karma](https://karma-runner.github.io/): Ferramenta de teste de unidade para JavaScript.
+- [Jasmine](https://jasmine.github.io/): Framework de teste de comportamento para JavaScript.
+
+## Utilização
+Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `npm install` para que todas as dependências e biliotecas utilizadas sejam instaladas.
+
+
