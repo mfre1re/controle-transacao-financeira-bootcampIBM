@@ -117,26 +117,32 @@ Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `n
 
 ## Utilizando o aplicativo
 <details><summary>Realizando inserção de uma transação:</summary>
+  
 ![Nova entrada](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/17f668e8-740a-4bbc-a09c-7c6449012579)
 </details>
 
 <details><summary>Realizando a inserção de uma ou mais transações:</summary>
+  
 ![Entrada em lotes](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/d8cfaf4b-a5fd-4c2c-b482-9dc283dd5a96)
 </details>
 
 <details><summary>Atualizando uma transação:</summary>
+  
 ![Atualizando transação](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/6d062600-1f41-4631-9f2a-be100d2c00bf)
 </details>
 
 <details><summary>Obtendo soma das transações por categoria:</summary>
+  
 ![Somando transações](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/3d997615-4030-41ca-a42f-c941443e5fd5)
 </details>
 
 <details><summary>Deletando uma transação:</summary>
+  
 ![Deletando uma transação](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/203db88b-8b0c-4e8d-b39d-85b6354047b1)
 </details>
 
 <details><summary>Deletando todas as transações:</summary>
+  
 ![Deletando todas as transações](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/8e6cbcb0-b541-4e10-91bc-aa25e336ea3b)
 </details>
 
