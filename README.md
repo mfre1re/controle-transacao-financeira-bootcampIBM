@@ -85,7 +85,7 @@ As ferramentas usadas para desenvolvimento do backend trazem:
 JAVA 17, Spring Boot 3.2.2, MySQL Driver, Spring Data JPA, Lombok, Spring Web.
 
 ## Frameworks e Bibliotecas Utilizadas
+- [Java JDK17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html): ambiente de desenvolvimento para construção de aplicações utilizando a linguagem de programação Java.
 - [Spring Boot](https://spring.io/projects/spring-boot): Framework para desenvolvimento rápido de aplicativos Java.
 - [Spring Data JPA](https://spring.io/projects/spring-data-jpa): Facilita o acesso a dados usando o Java Persistence API (JPA).
-- [Swagger](https://swagger.io/): Ferramenta para documentação e teste de APIs.
 - [Lombok](https://projectlombok.org/): Biblioteca que ajuda a reduzir a verbosidade do código Java.
