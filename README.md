@@ -43,6 +43,7 @@ Explicação breve sobre a estrutura de pacotes e módulos.
 O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo estruturado assim os seguintes pacotes:
 - config: CORS - para permitir que o backend receba solicitações de diferentes origens.
 - controllers:
+  
      1.TransacaoController - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
                Delete) sobre as transações.
   
