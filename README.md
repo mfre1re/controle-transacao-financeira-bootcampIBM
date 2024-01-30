@@ -80,10 +80,6 @@ O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo e
   - `id` (Integer): Identificador único da categoria.
   - `categoria` (String): Nome da categoria.
 
-## Requisitos do Sistema
-As ferramentas usadas para desenvolvimento do backend trazem:
-JAVA 17, Spring Boot 3.2.2, MySQL Driver, Spring Data JPA, Lombok, Spring Web.
-
 ## Frameworks e Bibliotecas Utilizadas
 - [Java JDK17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html): ambiente de desenvolvimento para construção de aplicações utilizando a linguagem de programação Java.
 - [Spring Boot](https://spring.io/projects/spring-boot): Framework para desenvolvimento rápido de aplicativos Java.
