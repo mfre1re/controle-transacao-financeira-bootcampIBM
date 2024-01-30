@@ -2,7 +2,7 @@
 API de transações financeiras com simples implementação de frontend e backend
 
 # Transação Financeira (Backend)
-Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git clone 
+Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git clone https://github.com/mfre1re/transacao-financeira-bootcampIBM.git`. Após o clone, abra o terminal, vá até o caminho onde está localizado o pom.xml e execute: `mvn clean install`.
 
 ## Descrição
 Parte estrutural responsável por processar as requisições CRUD, estabelecendo a interface entre os clientes e a base de dados por meio dos endpoints da API. Aqui temos os devidos endpoints com suas funcionalidades tais como requisitar (GET) as transações ou categorias, inserir ou atualizar transações (POST), deletar transações, todas ou única (DELETE). 
