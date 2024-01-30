@@ -42,11 +42,13 @@ Explicação breve sobre a estrutura de pacotes e módulos.
 ## Instruções de Execução
 O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo estruturado assim os seguintes pacotes:
 - config: CORS - para permitir que o backend receba solicitações de diferentes origens.
-- controllers: 1.TransacaoController - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
+- controllers:
+     1.TransacaoController - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
                Delete) sobre as transações.
   
      2.CategoriaController - gerencia as operações relacionadas as categorias de transações.
-- entites: 1.TransacaoEntity - representa uma transação financeira no sistema.
+- entites:
+     1.TransacaoEntity - representa uma transação financeira no sistema.
   
      2.CategoriaEntity - representa uma categoria associada as transações.
 - repositories: 1.TransacaoRepository: interage com o banco de dados para operações relacionadas às transações financeiras. Ele estende a interface `JpaRepository` do 
