@@ -9,17 +9,19 @@ Parte estrutural responsável por processar as requisições CRUD, estabelecendo
 ## Endpoints da API
 
 ### 1. Listar todas as transações
-<details><summary>Endpoint: `GET /transacao` </summary>(http://localhost:8080/transacao): Retorna todas as transações cadastradas.</details>
+<details><summary>Endpoint: GET  /transacao </summary>(http://localhost:8080/transacao): Retorna todas as transações cadastradas.</details>
 
 ### 2. Somar transações por categoria
-<details><summary>Endpoint: `GET /transacao/somartransacoes?id={id}`</summary>(http://localhost:8080/transacao/somartransacoes?id=1): Retorna a soma dos valores de transações para uma categoria específica.
+<details><summary>Endpoint: GET  /transacao/somartransacoes?id={id}</summary>(http://localhost:8080/transacao/somartransacoes?id=1): Retorna a soma dos valores de transações para uma categoria específica.
   
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/21cc871a-a373-434a-8a02-483f04b45783)
 </details>
 
 ### 3. Inserir transações
-- **Endpoint:** `POST /transacao/inserir`(http://localhost:8080/transacao/inserir): Insere uma ou mais transações na base de dados.
+<details><summary>Endpoint: POST  /transacao/inserir </summary>(http://localhost:8080/transacao/inserir): Insere uma ou mais transações na base de dados.
+  
 ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/142d4ed6-224f-47d9-892f-6aec174d15ac)
+</details>
 
 ### 4. Atualizar transação
 - **Endpoint:** `POST /transacao/atualizar`(http://localhost:8080/transacao/atualizar): Atualiza uma transação existente com base no ID.
