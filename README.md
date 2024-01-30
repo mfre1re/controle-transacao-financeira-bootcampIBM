@@ -64,6 +64,7 @@ O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo e
 - services:
 
      *1.TransacaoService* - encapsula a lógica de negócios relacionada as transações financeiras.
+
   
      *2.CategoriaService* - gerencia a lógica de negócios associadada as categorias de transações. Assim como o `TransacaoService`, ele interage com o 
             `CategoriaRepository` para realizar operações no banco de dados.
