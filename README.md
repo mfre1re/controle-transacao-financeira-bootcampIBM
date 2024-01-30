@@ -121,7 +121,7 @@ Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `n
 ![Nova entrada](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/17f668e8-740a-4bbc-a09c-7c6449012579)
 </details>
 
-<details><summary>Realizando a inserção de uma ou mais transações:</summary>
+<details><summary>Realizando a inserção de uma ou mais transações:</summary>  
   
 ![Entrada em lotes](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/d8cfaf4b-a5fd-4c2c-b482-9dc283dd5a96)
 </details>
