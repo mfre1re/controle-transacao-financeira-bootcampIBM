@@ -4,13 +4,9 @@ import br.com.desafio02bootcamp.entities.CategoriaEntity;
 import br.com.desafio02bootcamp.entities.TransacaoEntity;
 import br.com.desafio02bootcamp.services.CategoriaService;
 import br.com.desafio02bootcamp.services.TransacaoService;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
