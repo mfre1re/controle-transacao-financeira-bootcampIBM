@@ -44,20 +44,27 @@ O projeto está organizado em devidos pacotes "br.com.desafio02bootcamp" sendo e
 - config: CORS - para permitir que o backend receba solicitações de diferentes origens.
 - controllers:
   
-     1.TransacaoController - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
+     *1. TransacaoController* - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
                Delete) sobre as transações.
   
-     2.CategoriaController - gerencia as operações relacionadas as categorias de transações.
-- entites:
-     1.TransacaoEntity - representa uma transação financeira no sistema.
+     *2. CategoriaController* - gerencia as operações relacionadas as categorias de transações.
   
-     2.CategoriaEntity - representa uma categoria associada as transações.
-- repositories: 1.TransacaoRepository: interage com o banco de dados para operações relacionadas às transações financeiras. Ele estende a interface `JpaRepository` do 
+- entites:
+  
+     *1. TransacaoEntity* - representa uma transação financeira no sistema.
+  
+     *2. CategoriaEntity* - representa uma categoria associada as transações.
+  
+- repositories:
+
+     *1. TransacaoRepository* - interage com o banco de dados para operações relacionadas às transações financeiras. Ele estende a interface `JpaRepository` do 
                 Spring Data JPA, fornecendo métodos para realizar operações.
-                2.CategoriaRepository: gerencia as operações relacionadas as categorias no banco de dados. Assim como o `TransacaoRepository`, ele estende a interface   
+     *2. CategoriaRepository* - gerencia as operações relacionadas as categorias no banco de dados. Assim como o `TransacaoRepository`, ele estende a interface   
                 `JpaRepository`.
-- services: 1.TransacaoService - encapsula a lógica de negócios relacionada as transações financeiras.
-            2.CategoriaService - gerencia a lógica de negócios associadada as categorias de transações. Assim como o `TransacaoService`, ele interage com o 
+- services:
+
+     *1.TransacaoService* - encapsula a lógica de negócios relacionada as transações financeiras.
+     *2.CategoriaService* - gerencia a lógica de negócios associadada as categorias de transações. Assim como o `TransacaoService`, ele interage com o 
             `CategoriaRepository` para realizar operações no banco de dados.
 
 ## Modelos de Dados
