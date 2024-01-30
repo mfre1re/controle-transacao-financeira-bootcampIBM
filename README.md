@@ -13,7 +13,7 @@ Parte estrutural responsável por processar as requisições CRUD, estabelecendo
 
 ### 2. Somar transações por categoria
 - **Endpoint:** `GET /transacao/somartransacoes?id={id}`(http://localhost:8080/transacao/somartransacoes?id=1): Retorna a soma dos valores de transações para uma categoria específica.
-  ![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/21cc871a-a373-434a-8a02-483f04b45783)
+![image](https://github.com/mfre1re/transacao-financeira-bootcampIBM/assets/88170132/21cc871a-a373-434a-8a02-483f04b45783)
 
 ### 3. Inserir transações
 - **Endpoint:** `POST /transacao/inserir`(http://localhost:8080/transacao/inserir): Insere uma ou mais transações na base de dados.
