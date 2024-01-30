@@ -1,0 +1,194 @@
+<main>
+    <div class="new-item">
+      <h3>Nova entrada</h3>
+      <p>Entre com as informações da transação.</p>
+  
+      <form (submit)="salvar('unica')" method="post">
+        <!-- Campos para inserir transação individualmente -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Valor</th>
+              <th>Data</th>
+              <th>Categoria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input [(ngModel)]="valortransacao" name="spentValue" type="number" step="0.01" placeholder="Informe o valor" required>
+              </td>
+              <td>
+                <input [(ngModel)]="data" name="spentDate" type="date" required>
+              </td>
+              <td>
+                <select [(ngModel)]="categoria" name="spentType" required>
+                  <option value="">Selecione uma categoria</option>
+                  <option value="1">Moradia</option>
+                  <option value="2">Alimentação</option>
+                  <option value="3">Transporte</option>
+                  <option value="4">Lazer</option>
+                  <option value="5">Viagem</option>
+                  <option value="6">Educação</option>
+                  <option value="7">Salário</option>
+                  <option value="8">Outras Receitas</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit">Salvar Transação</button>
+      </form> 
+    </div>
+
+    <div class="new-item">
+      <h3>Entradas em Lote</h3>
+      <p>Entre com as informações da transação.</p>
+    
+      <form (submit)="salvar('massa')" method="post">
+        <!-- Campos para inserir transação em lote -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Valor</th>
+              <th>Data</th>
+              <th>Categoria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of linhasTransacao">
+              <td>
+                <input [(ngModel)]="i.valor" name="spentValue" type="number" step="0.01" placeholder="Informe o valor" required>
+              </td>
+              <td>
+                <input [(ngModel)]="i.data" name="spentDate" type="date" required>
+              </td>
+              <td>
+                <select [(ngModel)]="i.categoria" name="spentType" required>
+                  <option value="">Selecione uma categoria</option>
+                  <option value="1">Moradia</option>
+                  <option value="2">Alimentação</option>
+                  <option value="3">Transporte</option>
+                  <option value="4">Lazer</option>
+                  <option value="5">Viagem</option>
+                  <option value="6">Educação</option>
+                  <option value="7">Salário</option>
+                  <option value="8">Outras Receitas</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit">Salvar Transação</button>
+      </form>
+    </div>
+    
+  
+    <!-- <div class="search-item">
+      <h3>Busca</h3>
+      <p>Selecione a busca requerida.</p>
+  
+      <form (submit)="buscarTransacoes()" method="get">
+        <label for="searchType">Buscar por:</label>
+        <select id="searchType" name="searchType" required>
+          <option value="category">Categoria</option>
+          <option value="date">Data</option>
+          <option value="id">ID</option>
+        </select>
+        <br>
+        <label for="searchTerm">Termo buscado:</label>
+        <input [(ngModel)]="termoBusca" type="text" id="searchTerm" name="searchTerm" required>
+        <br>
+        <button type="button" (click)="buscarTransacoes()">Pesquisar</button>
+      </form>
+  
+      <div class="searchDone"> -->
+        <!-- Por aqui a Saída formatada com o ID do item adicionado ao DB-->
+      <!-- </div>
+    </div> -->
+  
+    <div class="lista-itens">
+      <h3>Lista de Transações</h3>
+      <p>Transações realizadas até o momento.</p>
+  
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Data</th>
+            <th>Categoria</th>
+            <th>Valor</th>
+            <th>Editar</th>
+            <th>Apagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transacao of transacoes">
+            <td>{{ transacao.id }}</td>
+            <td>{{ transacao.data }}</td>
+            <td>{{ transacao.categoria.categoria }}</td>
+            <td>{{ transacao.valor | currency: 'BRL':'symbol':'1.2-2' }}</td>
+            <td><button type="button" (click)="atualizarTransacao(transacao)">✏️</button></td>
+            <td><button type="button" (click)="deletarTransacao(transacao.id)">❌</button></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div *ngIf="formulario">
+        <h3>Editar Transação</h3>
+        <form (submit)="confirmarAtualizacao()">
+          <label for="#">ID:</label>
+          <input [(ngModel)]="transacaoSelecionada.id" name="id" type="text" readonly>
+          <br>
+          <label for="#">Valor R$:</label>
+          <input [(ngModel)]="transacaoSelecionada.valor" name="valorAtualizado" type="number" step="0.01" placeholder="Informe o valor" required>
+          <br>
+          <label for="#">Data:</label>
+          <input [(ngModel)]="transacaoSelecionada.data" name="dataAtualizada" type="date" required>
+          <br>
+          <label for="#">Categoria do Gasto:</label>
+          <select [(ngModel)]="transacaoSelecionada.categoria.id" name="idCategoriaAtualizada" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="1">Moradia</option>
+            <option value="2">Alimentação</option>
+            <option value="3">Transporte</option>
+            <option value="4">Lazer</option>
+            <option value="5">Viagem</option>
+            <option value="6">Educação</option>
+            <option value="7">Salário</option>
+            <option value="8">Outras Receitas</option>
+          </select>
+          <br>
+          <button type="submit">Atualizar Transação</button>
+        </form>
+      </div>
+      <button type="button" (click)="deletarTodasTransacoes()">Deletar Todas as Transações</button>
+      <br>
+    </div>
+  
+    <div class="sum-item">
+      <h3>Soma por Categoria</h3>
+      <p>Selecione a categoria para calcular a soma das transações.</p>
+  
+      <form (submit)="somarTransacoesPorCategoria()" method="get">
+        <label for="sumCategoryId">Categoria:</label>
+        <select id="sumCategoryId" name="sumCategoryId" [(ngModel)]="categoriaSoma" required>
+          <option value="">Selecione uma categoria</option>
+          <option value="1">Moradia</option>
+          <option value="2">Alimentação</option>
+          <option value="3">Transporte</option>
+          <option value="4">Lazer</option>
+          <option value="5">Viagem</option>
+          <option value="6">Educação</option>
+          <option value="7">Salário</option>
+          <option value="8">Outras Receitas</option>
+        </select>
+        <button type="submit">Calcular</button>
+      </form>
+  
+      <div class="sumDone">
+        <p><strong>Resultado:</strong><span id="resultadoSoma">{{ somaPorCategoria | currency: 'BRL':'symbol':'1.2-2' || '0.00' }}</span></p>
+      </div>
+    </div>
+  </main>
+  
