@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class TransacaoService {
@@ -21,10 +20,6 @@ public class TransacaoService {
     public List<TransacaoEntity> puxarTransacoesPorCategoria(Integer id){
         return transacaoRepository.findByCategoriaId(id);
     }
-
-//    public List<TransacaoEntity> puxarTransacoesPorCategoriaNome(String categoria){
-//        return transacaoRepository.findByCategoriaNome(categoria);
-//    }
 
     public void inserirOuAtualizarTransacao(TransacaoEntity transacao) {
         transacaoRepository.save(transacao);
