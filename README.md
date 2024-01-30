@@ -112,7 +112,7 @@ O frontend é a parte do sistema que vai interagir com o usuário e é responsá
 - [Karma](https://karma-runner.github.io/): Ferramenta de teste de unidade para JavaScript.
 - [Jasmine](https://jasmine.github.io/): Framework de teste de comportamento para JavaScript.
 
-## Utilização
+## Instalação
 Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `npm install` para que todas as dependências e biliotecas utilizadas sejam instaladas.
 
 ## Utilizando o aplicativo
