@@ -1,6 +1,5 @@
 package br.com.desafio02bootcamp.controllers;
 
-import br.com.desafio02bootcamp.entities.CategoriaEntity;
 import br.com.desafio02bootcamp.entities.TransacaoEntity;
 import br.com.desafio02bootcamp.services.CategoriaService;
 import br.com.desafio02bootcamp.services.TransacaoService;
