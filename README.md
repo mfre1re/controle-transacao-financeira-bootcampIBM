@@ -1,5 +1,5 @@
-# API Transacao financeira - Bootcamp IBM
-API de transações financeiras com simples implementação de frontend e backend
+# API Controle de Transacao financeira - Bootcamp IBM
+API Controle de transações financeiras com simples implementação de frontend e backend
 
 # Transação Financeira (Backend)
 Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git clone https://github.com/mfre1re/transacao-financeira-bootcampIBM.git`. Após o clone, abra o terminal, vá até o caminho onde está localizado o pom.xml e execute: `mvn clean install` para instalar as bibliotecas externas do projeto.
